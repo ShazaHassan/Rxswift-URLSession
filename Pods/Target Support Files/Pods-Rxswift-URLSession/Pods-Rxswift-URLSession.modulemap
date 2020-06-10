@@ -1,0 +1,6 @@
+framework module Pods_Rxswift_URLSession {
+  umbrella header "Pods-Rxswift-URLSession-umbrella.h"
+
+  export *
+  module * { export * }
+}

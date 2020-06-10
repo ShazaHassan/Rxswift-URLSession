@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Rxswift_URLSession" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NA-TD-B98">
+                        <rect key="frame" x="16" y="16" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ry-RV-tDW">
+                        <rect key="frame" x="16" y="53" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga3-fM-EWk">
+                        <rect key="frame" x="16" y="89.5" width="50.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilW-GP-V9O">
+                        <rect key="frame" x="253.5" y="89.5" width="50.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0NA-TD-B98" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1Hd-Rc-MFU"/>
+                    <constraint firstItem="Ga3-fM-EWk" firstAttribute="top" secondItem="6ry-RV-tDW" secondAttribute="bottom" constant="16" id="1ww-ke-BiH"/>
+                    <constraint firstItem="ilW-GP-V9O" firstAttribute="top" secondItem="6ry-RV-tDW" secondAttribute="bottom" constant="16" id="DZu-cv-bUo"/>
+                    <constraint firstAttribute="trailing" secondItem="6ry-RV-tDW" secondAttribute="trailing" constant="16" id="Ljy-cm-lzD"/>
+                    <constraint firstItem="6ry-RV-tDW" firstAttribute="top" secondItem="0NA-TD-B98" secondAttribute="bottom" constant="16" id="T7p-uD-f8h"/>
+                    <constraint firstItem="6ry-RV-tDW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UdN-aV-7rQ"/>
+                    <constraint firstItem="Ga3-fM-EWk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XGU-fd-otp"/>
+                    <constraint firstAttribute="trailing" secondItem="0NA-TD-B98" secondAttribute="trailing" constant="16" id="ao9-Jt-eCa"/>
+                    <constraint firstItem="0NA-TD-B98" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="uqZ-zd-fea"/>
+                    <constraint firstAttribute="trailing" secondItem="ilW-GP-V9O" secondAttribute="trailing" constant="16" id="wNJ-XH-bev"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="body" destination="6ry-RV-tDW" id="fC8-yn-9VK"/>
+                <outlet property="postId" destination="Ga3-fM-EWk" id="FIv-JC-u8W"/>
+                <outlet property="title" destination="0NA-TD-B98" id="GQ0-nV-MU6"/>
+                <outlet property="userId" destination="ilW-GP-V9O" id="dpo-Dy-yED"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="160.71428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
